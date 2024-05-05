@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Genshin";
+  src: url(./Default_JP.ttf);
+}
+@font-face {
+  font-family: "GenshinHigh";
+  src: url(./genshinHign.ttf);
+}
+
+.app-wrapper {
+  margin: 0 auto;
+  display: grid;
+  width: 1200px;
+  grid-template-areas: 
+  "h h h"
+  "n c c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+
+.header {
+  grid-area: h;
+  background: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+  box-shadow: 0px 0px 20px 10px rgba(6, 146, 227, 0.5);
+  img {
+    width: 60px;
+    border-radius: 25%;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.nav {
+  grid-area: n;
+  background-color: #0693e3;
+  box-shadow: 0px 0px 20px 10px rgba(6, 146, 227, 0.5);
+  a {
+    font-family: GenshinHigh;
+    text-decoration: none;
+  }
+}
+
+.content {
+  grid-area: c;
+  background-color: #0693e3;
+  font-family: "GenshinHigh";
+  box-shadow: 0px 0px 20px 10px rgba(6, 146, 227, 0.5);
+  div {
+    img {
+      max-width: 800px;
+    }
+  }
+}
